@@ -18,9 +18,8 @@ As I dive deeper into the field of Deep Learning, I wanted a place to:
 
 ```bash
 deep-learning-journey/
-├── notebooks/          # Jupyter notebooks for tutorials & experiments
+├── excercises/          # Jupyter notebooks for tutorials & excercises
 ├── projects/           # Mini-projects and implementations
-├── notes/              # Markdown or PDF notes from courses/books
 ├── datasets/           # Sample datasets (or links)
 ├── models/             # Saved model weights or architectures
 └── README.md           # You're here!
