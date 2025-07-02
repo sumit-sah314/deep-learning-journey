@@ -1,0 +1,40 @@
+
+Deep Learning - Fundamentals of Neural Network Key Takeaways
+=======================================
+
+Neurons: Basic Building Blocks
+------------------------------
+1. Neurons are the basic units of neural networks, inspired by biological neurons.
+2. Each neuron receives input, applies weights, passes it through an activation function, and sends the output forward.
+3. Logistic regression is a basic example of a neural network with one neuron.
+
+Perceptron and Multilayer Perceptron (MLP)
+------------------------------------------
+1. A perceptron is the simplest model used for linearly separable data.
+2. MLP includes hidden layers and non-linear activation, enabling complex pattern recognition.
+
+Neural Network Intuition – Insurance Example
+--------------------------------------------
+1. Neural networks have input, hidden, and output layers.
+2. Example: 'Age' and 'Education' might activate an 'Awareness' neuron, while 'Income' and 'Savings' might activate 'Affordability.'
+3. The output (buy insurance or not) depends on these hidden layer outputs.
+4. The network extracts patterns at each stage to make decisions.
+
+Purpose of Activation Functions
+-------------------------------
+1. Real-world problems are non-linear; activation functions introduce this non-linearity into the model.
+2. Think of neurons as detectives—activation functions determine if their "findings" are significant enough to pass on.
+3. Outputs can be binary (0/1) or continuous (e.g., 0.7 with sigmoid).
+
+Common Activation Functions
+---------------------------
+1. Sigmoid: Used in binary classification (range 0 to 1).
+2. Softmax: Used in multi-class classification.
+3. Tanh: Like sigmoid but outputs between -1 and 1.
+4. ReLU: Default for hidden layers; fast and avoids vanishing gradients.
+5. Leaky ReLU: Variant of ReLU that fixes "dead neuron" issues.
+
+Additional Notes
+----------------
+- Activation functions are crucial for the learning capacity of a neural network.
+- Understanding neuron behavior and the role of layers helps design better models.
