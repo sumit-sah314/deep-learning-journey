@@ -1,0 +1,48 @@
+
+Getting Started - Key Takeaways
+=======================================
+
+Neural Networks: The Foundation of Deep Learning
+------------------------------------------------
+1. Neural networks are inspired by the human brain and form the foundation of deep learning.
+2. Deep learning is useful when features are complex (e.g., identifying images), while simpler, structured data is better suited for statistical ML.
+3. Neural networks consist of input, hidden, and output layers. Neurons work together like processors to detect patterns.
+4. Deep learning mimics the brain’s pattern recognition and decision-making capabilities.
+
+Deep Learning vs Statistical ML
+-------------------------------
+- Use deep learning for unstructured and complex data (e.g., images, audio).
+- Use statistical ML for structured, tabular data.
+
+Neural Network Architectures
+----------------------------
+1. Neural networks have different architectures like houses (e.g., wood, metal).
+2. Popular types:
+   - Feed Forward Neural Network (FNN)
+   - Recurrent Neural Network (RNN)
+   - Convolutional Neural Network (CNN)
+   - Transformers
+
+Real World Applications
+-----------------------
+1. FNN: Weather prediction, demand forecasting
+2. CNN: Autonomous driving, image classification, disease diagnosis
+3. RNN: Machine translation, speech recognition (e.g., Google Assistant)
+4. Transformers: Generative AI (e.g., ChatGPT)
+
+Tooling: PyTorch vs TensorFlow
+------------------------------
+1. PyTorch (Meta) and TensorFlow (Google) are popular deep learning frameworks.
+2. PyTorch is preferred for beginners due to its simplicity and increasing popularity.
+
+Tooling: GPU vs TPU
+-------------------
+1. GPUs (Graphics Processing Units) are now widely used in deep learning.
+2. NVIDIA's growth is tied to demand from Gen AI and DL applications.
+3. TPUs (Tensor Processing Units) are less popular but also used for DL acceleration.
+4. A GPU is helpful but not mandatory for course exercises.
+
+Additional Notes
+----------------
+- Learning deep learning involves understanding architecture, tooling, and use cases.
+- Practical experience with tools like PyTorch will solidify your concepts.
