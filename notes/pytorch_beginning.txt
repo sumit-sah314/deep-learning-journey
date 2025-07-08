@@ -38,4 +38,4 @@ Numpy Array vs PyTorch Tensor
 1. PyTorch tensors are similar to NumPy arrays but offer advantages:
    - GPU acceleration support.
    - Built-in autograd feature for gradient computation.
-   - Deep integration with PyTorch ecosystem for DL tasks.
+   - Deep integration with PyTorch ecosystem for DL tasks
