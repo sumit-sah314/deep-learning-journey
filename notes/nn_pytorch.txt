@@ -1,0 +1,27 @@
+Deep Learning – Neural Networks in PyTorch: Key Takeaways
+==========================================
+
+Custom Neural Network with nn.Module
+------------------------------------------
+1. nn.Module is the base class for all PyTorch models.
+2. It’s common practice to create a custom class by subclassing nn.Module to define the model’s architecture.
+3. Calling model(input) automatically invokes the forward() method under the hood.
+
+Datasets and DataLoaders
+----------------------------
+1. PyTorch provides several built-in datasets (images, text, audio) through torchvision, torchaudio, etc.
+2. DataLoader enables efficient mini-batch training and optionally reshuffles data each epoch to reduce overfitting.
+
+Binary Cross Entropy (BCE) – Cost Function for Binary Classification
+------------------------------------------------------------------------
+1. Mean Squared Error (MSE) is not ideal for binary classification — the cost surface is non-convex and can cause training to get stuck in local minima.
+2. BCE combined with a sigmoid activation function creates a smooth, convex cost surface, making training more efficient.
+3. BCE penalizes high-confidence wrong predictions more, helping discover global minima.
+4. It naturally aligns with probabilistic outputs, making it ideal for binary outcomes.
+
+Categorical Cross Entropy – Cost Function for Multi-Class Classification
+--------------------------------------------------------------------------
+1. Categorical cross entropy (also called cross entropy) is used when you have more than two classes.
+2. Binary cross entropy is a special case of categorical cross entropy when only two output classes exist.
+"""
+
