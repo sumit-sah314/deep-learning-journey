@@ -1,0 +1,48 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs and debugging
+*.log
+*.out
+*.err
+
+# Model checkpoints and outputs
+checkpoints/
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# Experiment logs
+runs/
+lightning_logs/
+tensorboard/
+wandb/
+*.onnx
+
+# Environment config
+.env
+.env.*
+
+# IDE settings
+.vscode/
+.idea/
+
+# Mac/Linux/Windows system files
+.DS_Store
+Thumbs.db
