@@ -1,0 +1,62 @@
+Model Optimization in PyTorch - Key Takeaways
+=============================================
+
+Optimizers Overview
+-------------------
+1. Model optimization improves training speed and prediction performance.
+2. Optimizers adjust model weights based on gradients from backpropagation.
+3. Common optimizers include SGD, Momentum, RMSProp, and Adam.
+4. Optimizers are chosen based on problem type, data, and training stability.
+
+Stochastic Gradient Descent (SGD)
+---------------------------------
+1. Basic optimizer that updates weights using negative gradients.
+2. Update rule: θ = θ - η × ∇J(θ), where η is the learning rate.
+3. Simple and effective for convex problems, but slow for deep networks.
+4. Can oscillate in narrow or steep valleys if learning rate is not tuned.
+5. Performs better with small batch sizes and frequent updates.
+
+SGD with Momentum
+-----------------
+1. Adds a memory of past gradients to smooth updates and speed up convergence.
+2. Helps escape local minima and reduces zig-zagging in sharp curves.
+3. Update rule:
+   - vₜ = β × vₜ₋₁ + (1 - β) × ∇J(θ)
+   - θ = θ - η × vₜ
+4. β (momentum factor) is commonly set to 0.9.
+5. Helps stabilize and accelerate learning in deep networks.
+
+RMSProp
+-------
+1. Adjusts learning rate for each parameter using a moving average of squared gradients.
+2. Keeps the learning rate large for sparse gradients and small for frequent ones.
+3. Update rule includes:
+   - sₜ = β × sₜ₋₁ + (1 - β) × (∇J(θ))²
+   - θ = θ - η / √(sₜ + ε) × ∇J(θ)
+4. Common settings: β = 0.9, ε = 1e-8.
+5. Works well for non-stationary or noisy problems (like RNNs or image data).
+
+Adam Optimizer
+--------------
+1. Combines Momentum and RMSProp — tracks both first moment (mean) and second moment (variance) of gradients.
+2. Update rule is adaptive and stable, making it ideal for most deep learning tasks.
+3. Default hyperparameters:
+   - β₁ = 0.9 (momentum), β₂ = 0.999 (squared gradient avg), ε = 1e-8
+4. Often preferred for fast convergence and ease of tuning.
+5. Recommended for most beginner-level and production DL models.
+
+PyTorch Optimizer Code Examples
+-------------------------------
+1. Using SGD with momentum:
+   optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+
+2. Using RMSProp:
+   optimizer = torch.optim.RMSprop(model.parameters(), lr=0.001, alpha=0.99, momentum=0.9)
+
+3. Using Adam:
+   optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+
+4. Always follow these steps in the training loop:
+   - optimizer.zero_grad()
+   - loss.backward()
+   - optimizer.step()
