@@ -1,0 +1,37 @@
+Deep Learning - Regularization Techniques Key Takeaways
+=======================================
+
+What is Regularization
+-----------------------
+1. Regularization helps prevent overfitting, where a model performs well on training data but poorly on unseen data.
+2. It includes techniques like dropout, L1/L2 regularization, batch normalization, and early stopping.
+3. The goal is to improve generalization and model robustness.
+
+Dropout Regularization
+-----------------------
+1. Dropout randomly disables neurons during training to prevent overfitting.
+2. It forces the model to learn redundant and generalized patterns.
+3. Dropout ratio (e.g., 0.2, 0.3, 0.5) controls how many neurons are dropped.
+4. In PyTorch, dropout is applied after activation using nn.Dropout(p), where p is the dropout probability.
+
+L1 and L2 Regularization
+-------------------------
+1. L1 and L2 regularization add penalties to the loss function to discourage large weights.
+2. L1 regularization is also called Lasso Regression and promotes sparsity by driving some weights to zero.
+3. L2 regularization is also called Ridge Regression and penalizes the sum of squared weights.
+4. Both techniques help reduce overfitting and improve generalization.
+
+Batch Normalization
+--------------------
+1. Batch normalization normalizes layer inputs to have zero mean and unit variance.
+2. It speeds up training by allowing higher learning rates.
+3. It makes the model less sensitive to initialization of weights.
+4. Acts as a regularizer when used with dropout, reducing overfitting.
+5. Improves training stability and performance.
+
+Early Stopping
+---------------
+1. Early stopping monitors validation performance and stops training when improvement halts.
+2. A parameter called patience defines how many epochs without improvement are allowed before stopping.
+3. Prevents overfitting by halting training before the model memorizes noise.
+4. Saves time and computing resources by avoiding unnecessary training.
